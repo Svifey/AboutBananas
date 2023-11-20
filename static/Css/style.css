@@ -1,0 +1,90 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.unscroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .unscroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+body {
+    background-color: bisque;
+}
+
+.ui {
+    width: 100%;
+    position: relative;
+    background-color: bisque;
+}
+
+.inline-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+section .text-container{
+    
+    gap: 300px;
+    position: relative;
+
+    
+ }
+
+section .text-container .text-box{
+    margin:20px;
+    padding: 60px;
+    background: rgb(126, 204, 230,0.5);
+    width: 300px;
+    height: 300px;
+    position: relative;
+    
+
+    
+    
+  }
+  section .text-container .text-box img{
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+  }
+  section .text-container .text-box h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+.bh3 {
+    
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    color: #000000;
+}
+
+section .text-container2{
+    display: flex;
+    
+ }
+
+section .text-container2 .text-box2{
+    margin:30px;
+    padding: 60px;
+    background: rgb(173, 216, 230, 0.5); 
+    max-width:300px;
+    width: 100%;
+    height: 300px;
+    transition: transform 1s ease;
+    
+  }
+
+section .text-container:hover .text-box2:hover {
+    transform: scale(1.1);
+}
